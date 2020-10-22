@@ -1,0 +1,79 @@
+*:focus
+{
+  outline: none;
+}
+.contant
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+
+  .video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input[type=text]
+  {
+    border: none;
+
+    border-bottom: 1px solid white;
+  }
+
+  input[type=submit]
+  {
+    background-color: #5d2163;
+    color: white;
+  }
+
+.container1
+{
+    z-index:10;
+    width: 50%;
+    padding:20px 20px;
+    /* box-shadow: 2px 3px 6px rgba(0, 38, 255, 0.685); */
+}
+
+li{
+  opacity: 0.8;
+}
+
+ul li:hover
+{
+    opacity: 1;
+    line-height: 30px;
+    border-bottom: oldlace 2px solid;
+}
+
+.colorchange
+{
+
+  animation: mymove 120ms ;    
+}
+
+@keyframes mymove {
+  0%   {left: 100px;}
+  25%  {left: 75px;}
+  75%  {left: 50px}
+  100% {left: 30px;}
+}
